@@ -1,0 +1,9 @@
+server:
+  port: 9090
+
+# MONGODB Properties
+# Mongo database URI
+spring:
+  data:
+    mongodb:
+      uri: mongodb://192.168.99.100:32775/test
