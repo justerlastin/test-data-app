@@ -1,5 +1,7 @@
 package org.testapp.model;
 
+import java.time.LocalDate;
+
 import org.springframework.data.annotation.Id;
 
 public class Movie {
@@ -9,14 +11,38 @@ public class Movie {
 
 	private String title;
 
-	private Integer releasedYear;
+	private String country;
+
+	private LocalDate dvdReleaseDate;
+
+	private String director;
+
+	private String genre;
+
+	private String language;
+
+	private String plot;
+
+	private String rating;
+
+	private String year;
 
 	public Movie() {
 	}
 
-	public Movie(String title, Integer releasedYear) {
+	public Movie(String id, String title, String country, LocalDate dvdReleaseDate, String director, String genre,
+			String language, String plot, String rating, String year) {
+		super();
+		this.id = id;
 		this.title = title;
-		this.releasedYear = releasedYear;
+		this.country = country;
+		this.dvdReleaseDate = dvdReleaseDate;
+		this.director = director;
+		this.genre = genre;
+		this.language = language;
+		this.plot = plot;
+		this.rating = rating;
+		this.year = year;
 	}
 
 	public String getId() {
@@ -35,17 +61,75 @@ public class Movie {
 		this.title = title;
 	}
 
-	public Integer getReleasedYear() {
-		return releasedYear;
+	public String getCountry() {
+		return country;
 	}
 
-	public void setReleasedYear(Integer releasedYear) {
-		this.releasedYear = releasedYear;
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public LocalDate getDvdReleaseDate() {
+		return dvdReleaseDate;
+	}
+
+	public void setDvdReleaseDate(LocalDate dvdReleaseDate) {
+		this.dvdReleaseDate = dvdReleaseDate;
+	}
+
+	public String getDirector() {
+		return director;
+	}
+
+	public void setDirector(String director) {
+		this.director = director;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public String getPlot() {
+		return plot;
+	}
+
+	public void setPlot(String plot) {
+		this.plot = plot;
+	}
+
+	public String getRating() {
+		return rating;
+	}
+
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
+
+	public String getYear() {
+		return year;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
 	}
 
 	@Override
 	public String toString() {
-		return title + "[" + releasedYear + "]";
+		return "Movie [id=" + id + ", title=" + title + ", country=" + country + ", dvdReleaseDate=" + dvdReleaseDate
+				+ ", director=" + director + ", genre=" + genre + ", language=" + language + ", plot=" + plot
+				+ ", rating=" + rating + ", year=" + year + "]";
 	}
 
 }

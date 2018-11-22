@@ -18,9 +18,8 @@ public class MovieCollectionBOImpl implements MovieCollectionBO {
 		return movie;
 	}
 
-	public List<Movie> findByReleasedYear(int releasedYear) {
-		List<Movie> movieList = movieCollectionDAO
-				.findByReleasedYear(releasedYear);
+	public List<Movie> findByYear(String releasedYear) {
+		List<Movie> movieList = movieCollectionDAO.findByYear(releasedYear);
 		return movieList;
 	}
 
@@ -36,4 +35,5 @@ public class MovieCollectionBOImpl implements MovieCollectionBO {
 		List<Movie> movielist = movieCollectionDAO.findAll();
 		return movielist;
 	}
+
 }

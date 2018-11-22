@@ -9,6 +9,6 @@ public interface MovieCollectionDAO extends MongoRepository<Movie, String> {
 
 	public Movie findByTitle(String title);
 
-	public List<Movie> findByReleasedYear(Integer releasedYear);
+	public List<Movie> findByYear(String year);
 
 }

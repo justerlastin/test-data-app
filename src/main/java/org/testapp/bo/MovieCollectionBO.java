@@ -10,7 +10,7 @@ public interface MovieCollectionBO {
 
 	public Movie findByTitle(String title);
 
-	public List<Movie> findByReleasedYear(int releasedYear);
+	public List<Movie> findByYear(String releasedYear);
 
 	public void deleteAllMovieRecs();
 
