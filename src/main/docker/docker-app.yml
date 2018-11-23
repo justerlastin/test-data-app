@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT}
+
+spring:
+  data:
+    mongodb:
+      host: ${MONGO_HOST}
+      port: ${MONGO_PORT}
+      database: ${MONGO_DATABASE}
+      username: ${MONGO_USERNAME}
+      password: ${MONGO_PASSWORD}
+
+logging:
+  level:
+    org.springframework.data: DEBUG
+    com.mongodb: DEBUG

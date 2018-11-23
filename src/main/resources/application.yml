@@ -1,11 +1,16 @@
 server:
-  port: 9090
+  port: 8080
 
-# MONGODB Properties
-# Mongo database URI
 spring:
   data:
     mongodb:
-      uri: mongodb://host-ip:host-port/db
+      host: 
+      port: 
+      database: 
       username: 
       password: 
+
+logging:
+  level:
+    org.springframework.data: DEBUG
+    com.mongodb: DEBUG

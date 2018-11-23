@@ -1,4 +1,4 @@
-package org.testapp;
+package org.testapp.controller;
 
 import java.time.LocalDate;
 import java.util.Arrays;
