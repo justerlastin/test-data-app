@@ -1,6 +1,4 @@
 FROM anapsix/alpine-java:8_jdk
-#FROM openjdk:8-jre-alpine
-#FROM java:8-jre
 ADD app.jar app.jar
 ADD docker-app.yml docker-app.yml
 RUN sh -c 'touch /app.jar'
